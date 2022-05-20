@@ -1,0 +1,512 @@
+/*
+Author: Joey S
+Date: 5/12/2022
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, h2, h3, h4, h5, h6, div, img, ul, figure, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for box sizing applies to all elements */
+
+html {
+    box-sizing: border-box; 
+}
+
+*, *::before, *::after { 
+    box-sizing: inherit; 
+}
+
+
+body {
+    max-width: 100%; 
+    height: auto; 
+    font-family: 'Roboto', Arial;
+}
+
+img {
+    max-width: 100%;
+
+}
+
+/* ---------------------------------------- */
+/* FOLLOWING STYLES ARE FOR MOBILE SCREENS */
+/* ---------------------------------------- */
+
+/* Media Query for Mobile Viewport */
+@media screen and (max-width: 749px)  {
+
+body {
+    max-width: 749px;
+}
+
+.desktop logo, .desktop, .feature-desktop, .desk-image, .learn-desktop, .feature-desktop, .thesis-desktop, .description-desktop {
+    display: none; 
+}
+
+/* Style rules for mobile navigation menu */
+
+#content .mobile {
+    margin: 20px 0; 
+}
+#content .mobile ul {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+}
+
+#content .mobile li {
+    list-style-type: none; 
+}
+
+/* Start Here Section for mobile */
+
+#start-here {
+    background-color: lightgray; 
+    padding-bottom: 32px; 
+}
+
+#start-here h1 {
+    font-weight: 700;
+    margin: 32px 16px; 
+}
+
+#start-here h3 {
+    font-weight: 400;
+    margin: 0px 16px 24px 16px;
+}
+
+#start-here .button {
+    background-color: gray;
+    margin: 0px 20px; 
+    text-align: center; 
+    padding: 10px 2px;
+}
+
+#start-here .button a {
+    text-decoration: none; 
+    color: white;
+    padding: 2px 60px; 
+}
+
+/* Feature Section for Mobile */
+
+#features-section {
+    background-color: #e4f5f5;
+    padding-top:16px; 
+}
+
+.feature-all .right {
+    display: block; 
+    padding-bottom: 48px; 
+}
+
+.feature-all .mobile-image {
+    display: block; 
+    max-width: 90%; 
+    margin: 0 auto; 
+}
+
+.feature-all .right h3, p, .read {
+    margin-left: 32px;
+    margin-top: 16px; 
+    letter-spacing:0.1em;
+    text-decoration: none; 
+    line-height:1.5; 
+}
+
+/* Learning section in mobile */
+
+#learn-section {
+    background-color: #e4f5f5;
+    padding-bottom:16px; 
+}
+
+#learn-section h2 {
+    font-size: 2em; 
+    text-align: center; 
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    margin-bottom: 16px; 
+}
+
+#learn-section .learn-mobile {
+    display: flex; 
+    flex-direction: column;
+}
+
+.learn-mobile .btn-2 {
+    display: block;
+    background-color: lightgray; 
+    margin: 2px 16px;
+    padding-top: 16px; 
+    padding-bottom: 24px; 
+}
+
+.learn-mobile .btn-2 a {
+    text-decoration: none;
+    color: rgb(121, 120, 120);
+    padding: 16px 40px 16px 16px; 
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
+    font-weight: 700; 
+}
+
+/* Thesis Section in Mobile */
+#thesis-section {
+    background-color: #e4f5f5;
+    padding-top: 32px; 
+    padding-bottom:16px; 
+}
+
+#thesis-section h2 {
+    font-size: 2em; 
+    text-align: center; 
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    margin-bottom: 16px; 
+}
+
+#thesis-example {
+    margin: 0 auto;
+    width: 100%;
+
+}
+}
+
+/* ---------------------------------------- */
+/* FOLLOWING STYLES ARE FOR TABLET SCREENS */
+/* ---------------------------------------- */
+
+/* Media Query for Tablet Viewport 
+@media screen and (min-width: 700px) and (max-width: 1100px) {
+
+
+} */
+
+/* ---------------------------------------- */
+/* FOLLOWING STYLES ARE FOR DESKTOP SCREENS */
+/* ---------------------------------------- */
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 750px), print {
+
+
+.container {
+    max-width: 1250px;
+}
+
+.mobile-image, .mobile, .learn-mobile {
+    display: none; 
+}
+
+/* Styling of Header and Nav Element for Desktop */
+
+#content {
+    display: flex;
+    flex-direction: row; 
+    justify-content:space-between;
+    margin: 10px; 
+}
+
+#content .desktop logo {
+    margin-left: 24px;
+    margin-top: 10px;
+}
+
+#content img {
+    display: inline-block; 
+}
+
+#content a {
+    text-decoration: none;
+}
+
+#content span {
+    margin-left: 5px; 
+    font-weight: 700; 
+}
+
+#content .desktop ul {
+    display: flex; 
+    flex-direction: row; 
+    margin-top: 10px;
+}
+
+#content .desktop li {
+    list-style-type: none; 
+    padding-right: 16px;
+    text-decoration: none; 
+}
+
+#content .desktop li a {
+    text-decoration: none;
+    color: black; 
+}
+
+#content .desktop li a:hover {
+    background-color: gray;
+    color: white;
+    padding: 5px 3px;
+}
+
+/* Learn something new section in Desktop */
+
+#start-here {
+    display: flex;
+    flex-direction: row; 
+    background-color: lightgray; 
+}
+
+#start-here .image1 {
+    margin: 32px 24px; 
+}
+
+#start-here .learn {
+    margin: 7% 14% 4% 3%; 
+}
+
+#start-here .learn h1 {
+    font-size: 3.0em;
+    margin-bottom: 16px;
+}
+
+#start-here .learn h3 {
+    font-size: 1.25em; 
+    line-height: 1.5em;
+
+}
+
+#start-here .button {
+    background-color: rgb(110, 108, 108);
+    margin: 32px 0px; 
+    text-align: center; 
+    padding: 12px 2px;
+}
+
+#start-here .button a {
+    text-decoration: none; 
+    color: white;
+    font-size: 1.2em; 
+    padding: 2px 40px; 
+}
+
+/* Feature Section in Desktop */
+
+#features-section {
+    display: flex; 
+    padding: 24px 0px;
+    background-color: #f0fafa;
+}
+
+#features-section .feature-desktop {
+    width: 55%;
+    height: auto;
+    padding-right: 40px; 
+    margin-right: 6px; 
+}
+
+#features-section .left img {
+    margin: 0px 0px 32px 24px;
+}
+
+#features-section .content1 {
+    margin-left: 24px; 
+}
+
+#features-section .content1 h2 {
+    margin-bottom: 32px; 
+    font-size: 2em; 
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+#features-section .content1 .quote {
+    color: rgb(110, 108, 108);
+}
+
+#features-section .content1 .quote-citation {
+    margin-top: 32px; 
+}
+
+#features-section .feature-all {
+    width: 45%;
+    display: flex; 
+    flex-direction: column; 
+}
+
+.feature-all .right {
+    display: flex;
+    flex-direction: row; 
+    padding: 16px;
+    margin-left: 0px; 
+    border-bottom: 1px solid lightgray; 
+    border-left: 1px solid lightgray; 
+}
+
+.feature-all .right:first-child {
+    padding-top: 0;
+}
+
+.feature-all .right:last-child {
+    background-color: lightgray; 
+    padding: 16px 0 16px 16px;
+    margin-top: 0; 
+    margin-left: 0; 
+}
+
+#features-section .right .desk-image {
+    width: 32%;
+    height: auto; 
+}
+
+#features-section .right .right-content {
+    width: 65%;
+    height: auto;
+    margin-left: 16px; 
+    margin-top: 30px; 
+    color: rgb(110, 108, 108);
+}
+
+
+#features-section .right .right-content a {
+    text-decoration: none;
+
+}
+
+/* Learning section in Desktop */
+#learn-section {
+    padding: 32px 0px 42px 0px;
+    background-color: rgb(238, 238, 238);
+}
+
+#learn-section h2 {
+    font-size: 2em; 
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding-bottom: 32px; 
+    text-align: center; 
+}
+
+#learn-section .learn-desktop { 
+    padding: 0px 72px; 
+}
+
+#learn-section .learn-desktop .row-1  {
+   display: flex;
+   flex-direction: row; 
+}
+
+#learn-section .learn-desktop .row-2  {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row; 
+ }
+
+#learn-section .learn-desktop .grid {
+    width: 30%; 
+    flex: 30%;
+    margin-right: 32px; 
+    background-color: white; 
+}
+
+#learn-section .learn-desktop .grid h3 {
+    margin: 16px;
+    color: rgb(110, 108, 108);
+    letter-spacing: 0.05em;
+}
+
+#learn-section .learn-desktop .grid h4 {
+    margin-left: 16px;
+    color: gray;
+    letter-spacing: 0.05em; 
+    font-weight: 400; 
+}
+
+#learn-section .learn-desktop .grid p {
+    margin: 8px 32px 24px 16px;
+    color: gray; 
+    letter-spacing: 0.05em; 
+    font-weight: 400; 
+}
+
+/* Thesis Section for Desktop */
+
+#thesis-section {
+    padding: 32px 0px;
+    background-color: #f0fafa;
+}
+
+#thesis-section h2 {
+    font-size: 2em; 
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    /* padding-bottom: 32px;  */
+    text-align: center; 
+}
+
+#thesis-section .video-center {
+    display: flex; 
+    justify-content: center;
+    align-items:flex-start;
+}
+
+#thesis-example {
+    width: 60%; 
+    height: auto; 
+    margin-top: 32px; 
+}
+
+#thesis-section .thesis-desktop {
+    width: 40%;
+    height: auto; 
+    margin-left: 24px; 
+    margin-top: 45px; 
+    display: flex;
+    flex-direction: column; 
+}
+
+#thesis-section .thesis-desktop .grid2 {
+    display: flex;
+    flex-direction: row; 
+}
+
+#thesis-section .thesis-desktop .grid2:first-child {
+    background-color: rgb(238, 238, 238);
+}
+
+.thesis-desktop .fisma {
+    width: 40%; 
+    height: auto; 
+    margin: 16px;
+}
+
+.thesis-desktop .now {
+    width: 35%; 
+    height: auto; 
+    margin: 16px;
+}
+
+.thesis-desktop .thesis-content {
+    width: 65%;
+    height: auto;
+    margin-left: 24px; 
+    margin-top: 50px; 
+    color: rgb(110, 108, 108);
+}
+
+#thesis-section .description-desktop {
+    width: 55%;
+    margin: 24px 0 24px 24px;
+    color: rgb(110, 108, 108);
+}
+
+#thesis-section .description-desktop h3 {
+    margin-bottom: 8px; 
+}
+}
+
